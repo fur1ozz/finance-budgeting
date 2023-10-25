@@ -1,0 +1,63 @@
+/* Header Container Styles */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+.header-container {
+    width: 100vw;
+    display: flex;
+    background-color: #1A222C;
+    color: #fff;
+    text-align: center;
+    flex-direction: row;
+    height: 101px;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Header Title Styles */
+.header-title {
+    display: flex;
+    font-size: 27px;
+    font-weight: 800;
+    padding-left: 50px;
+    width: 50%;
+}
+
+.for-all-header{
+    width: 35%;
+}
+/* Navigation List Styles */
+.nav-list {
+    list-style: none;
+    padding: 0;
+}
+
+/* Navigation List Item Styles */
+.nav-list li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Navigation Link Styles */
+.nav-list a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+.for-login-button{
+    width: 15%;
+}
+.login-btn{
+    background-color: #D8275A;
+    font-size: 18px;
+    /*font-weight: 500;*/
+    border-radius: 14px;
+    width: 98px;
+    height: 44px;
+    border: none;
+    outline: none;
+    color: #fff;
+    text-transform: uppercase;
+
+    padding: 10px 20px;
+    /*border-radius: 5px;*/
+    cursor: pointer;
+}
