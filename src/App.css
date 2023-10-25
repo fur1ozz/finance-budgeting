@@ -1,0 +1,126 @@
+/* Task Container Styles */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+body{
+    background-color: #d8d8d8;
+    font-family: 'Inter', sans-serif;
+}
+/* Goals Container Styles */
+.goals-container {
+    width: 320px;
+    height: 370px;
+    border: 1px solid #E5E5E5;
+    border-radius: 1px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+    background-color: #fff;
+}
+
+/* Goals Title Styles */
+.goals-title {
+    font-size: 20px;
+    color: #FF2F78;
+    margin: 0;
+    font-weight: bolder;
+}
+
+/* Goals Description Styles */
+.goals-description {
+    font-size: 17px;
+    color: #8E8E8E;
+    text-align: center;
+}
+
+/* Goals Complete Button Styles */
+.complete-button {
+    background-color: #FF2F78;
+    width: 125px;
+    height: 40px;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 1px;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 16px;
+}
+.complete-button:hover {
+    outline: 3px solid #FC74AC;
+}
+.all-goals{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.top-left-right {
+    color: #FF2F78;
+    font-size: 11px;
+}
+
+.rounded-container {
+    border-radius: 20px;
+    width: 100%;
+    height: 24px;
+    border: 1px solid #000;
+    display: flex;
+    margin: 3px 0 3px 0;
+}
+
+.input-field {
+    border: none;
+    border-bottom: 1px solid #FF2F78;
+    width: 100%;
+    margin-right: 10px;
+    outline: none;
+    text-align: center;
+}
+
+.action-button {
+    width: 39px;
+    height: 16px;
+    background-color: #FF2F78;
+    color: white;
+    border: none;
+    border-radius: 1px;
+    cursor: pointer;
+    font-size: 10px;
+}
+.saved-input-adder{
+    display: flex;
+}
+.upper-left-right-saved{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.jauns-iekrajums-cont{
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    padding-right: 40px;
+}
+.jauns-iekrajums-btn{
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #D8275A;
+    border-radius: 14px;
+    width: 196px;
+    height: 39px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
