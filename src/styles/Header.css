@@ -10,6 +10,7 @@
     height: 101px;
     align-items: center;
     font-family: 'Inter', sans-serif;
+    justify-content: space-between;
 }
 
 /* Header Title Styles */
@@ -21,18 +22,17 @@
     width: 50%;
 }
 
-.for-all-header{
-    width: 35%;
-}
 /* Navigation List Styles */
 .nav-list {
     list-style: none;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /* Navigation List Item Styles */
 .nav-list li {
-    display: inline;
+    display: flex;
     margin-right: 20px;
 }
 
@@ -44,6 +44,9 @@
 }
 .for-login-button{
     width: 15%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
 }
 .login-btn{
     background-color: #D8275A;
@@ -60,4 +63,29 @@
     padding: 10px 20px;
     /*border-radius: 5px;*/
     cursor: pointer;
+}
+.show-small{
+    display: none!important;
+}
+@media only screen and (max-width: 1100px) {
+    .none-small{
+        display: none!important;
+    }
+    .show-small{
+        display: flex!important;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .no-login{
+        display: none;
+    }
+    .header-container {
+        height: 43px;
+    }
+    .header-title {
+        font-size: 12px;
+    }
+    .nav-list a {
+        font-size: 10px;
+    }
 }

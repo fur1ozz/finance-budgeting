@@ -1,18 +1,19 @@
 import React from 'react';
-import '../Header.css'; // Import the CSS file
+import '../styles/Header.css'; // Import the CSS file
 
-function Header() {
+function Header({ prop, link }) {
     return (
         <header className="header-container">
             <h1 className="header-title">Maze Tracker</h1>
             <nav className="for-all-header">
                 <ul className="nav-list">
-                    <li><a href="/">REPORTCARD</a></li>
-                    <li><a href="/about">IEKRĀJUMI</a></li>
-                    <li><a href="/contact">IZMAKSAS</a></li>
+                    <li className="none-small"><a href="/ReportCard">REPORTCARD</a></li>
+                    <li className="none-small"><a href="/">IEKRĀJUMI</a></li>
+                    <li className="none-small"><a href="/Izmaksas">IZMAKSAS</a></li>
+                    <li className="show-small"><a href={'/' + link}>{prop}</a></li>
                 </ul>
             </nav>
-            <div className="for-login-button">
+            <div className="for-login-button no-login">
                 <button className="login-btn">login</button>
             </div>
         </header>
