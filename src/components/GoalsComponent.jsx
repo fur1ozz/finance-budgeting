@@ -1,9 +1,11 @@
 import React from 'react';
 import {Link} from "react-router-dom";
+import Sidebar from "./Sidebar";
 
 function GoalsComponent() {
     return (
         <>
+            <Sidebar />
             <div className="jauns-iekrajums-cont">
                 <Link className="jauns-iekrajums-btn" to="/NewGoal">Jauns Iekrājums</Link>
             </div>
