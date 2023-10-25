@@ -1,11 +1,11 @@
 import Sidebar from "../components/Sidebar";
 import Header from "../components/Header";
 
-function HeaderComb(){
+function HeaderComb({firstProp, firstLink}){
     return(
         <div>
             <Sidebar />
-            <Header prop="IZMAKSAS" link="Izmakas" />
+            <Header prop={firstProp} link={firstLink} />
         </div>
     );
 }
