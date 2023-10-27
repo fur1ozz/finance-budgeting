@@ -33,7 +33,7 @@ function Header({ prop, link }) {
                 </ul>
             </nav>
             <div className="for-login-button no-login">
-                <button className="login-btn">login</button>
+                <Link to="/Login" className="login-btn">login</Link>
             </div>
         </header>
     );
