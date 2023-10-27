@@ -1,5 +1,5 @@
 import React from 'react';
-import '../NewGoal.css'; // Import your component-specific styles
+import '../styles/NewGoal.css'; // Import your component-specific styles
 
 function NewGoal() {
     return (
