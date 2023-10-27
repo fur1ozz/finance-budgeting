@@ -1,12 +1,13 @@
 import React from 'react';
-import '../styles/Header.css'; // Import the CSS file
+import '../styles/Header.css';
+import {Link} from "react-router-dom"; // Import the CSS file
 
 function Header({ prop, link }) {
     const activeLink = prop; // Set the active link name based on the 'prop' value
 
     return (
         <header className="header-container">
-            <h1 className="header-title">Maze Tracker</h1>
+            <Link className="header-title" to="/">Maze Tracker</Link>
             <nav className="for-all-header">
                 <ul className="nav-list">
                     <li className="none-small">
