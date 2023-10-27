@@ -2,12 +2,22 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Sidebar from './Sidebar';
 
+
+//TODO
+//need to fix numbers being more than 10.00
+//need to make that the goal saved cant be -
+//need to add user functionality1
 function GoalsComponent() {
     const [data, setData] = useState([]);
     const [inputValues, setInputValues] = useState({});
-    const user = '1';
+    const user = '1'; //need to make session
     const [showMessageMap, setShowMessageMap] = useState({});
 
+
+    const getRandomPlaceholder = () => {
+        // Generate a random number between 1 and 100 and convert it to a string
+        return Math.floor(Math.random() * 100) + 1 + '';
+    };
     const getColorForSum = (sum) => {
         if (sum >= 1000) return 'color5';
         if (sum >= 500) return 'color4';
@@ -174,13 +184,18 @@ function GoalsComponent() {
                                     Goal - {goal.iekrajumu_sum}$
                                 </div>
                             </div>
-                            <div className="rounded-container"></div>
+                            <div className="rounded-container">
+                                <div style={{
+                                    ...getAddBackgroundColor(parseFloat(goal.iekrajumu_sum)),
+                                    width: `${(goal.iekrajumu_iekrajumi / goal.iekrajumu_sum) * 100}%`,
+                                }}></div>
+                            </div>
                             {/* Make the bar for % */}
                             <div className="saved-input-adder">
                                 <input
                                     type="number"
                                     className="input-field"
-                                    placeholder="30"
+                                    placeholder={getRandomPlaceholder()}
                                     style={getInputBorderColor(parseFloat(goal.iekrajumu_sum))}
                                     value={inputValues[goal.iekrajumu_id] || ''}
                                     onChange={(e) => handleInputChange(goal.iekrajumu_id, e.target.value)}

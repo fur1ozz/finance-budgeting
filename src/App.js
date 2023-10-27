@@ -1,15 +1,13 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './styles/App.css';
-// import Header from "./components/Header";
-import GoalsComponent from "./components/GoalsComponent";
-import NewGoal from "./components/NewGoal";
-import Header from "./components/Header";
 import HeaderComb from "./pages/HeaderComb";
 import GoalsPage from "./pages/GoalsPage";
 import NewGoalsPage from "./pages/NewGoalsPage";
 import ReportCardPage from "./pages/ReportCardPage";
 import IzmaksasPage from "./pages/IzmaksasPage";
 import HomePage from "./pages/HomePage";
+import Login from "./components/Login";
+import Register from "./components/Register";
 
 function App() {
   return (
@@ -23,6 +21,8 @@ function App() {
                   <Route path="/ReportCard" element={<ReportCardPage />} />
                   <Route path="/Izmaksas" element={<IzmaksasPage />} />
                   <Route path="/" element={<HeaderComb />} />
+                  <Route path="/Login" element={<Login />} />
+                  <Route path="/Register" element={<Register />} />
               </Routes>
           </div>
       </Router>

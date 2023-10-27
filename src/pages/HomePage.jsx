@@ -1,10 +1,11 @@
 import HeaderComb from "./HeaderComb";
+import HomePageMainText from "../components/HomePageMainText";
 
 function HomePage(){
     return(
         <>
             <HeaderComb firstProp="" firstLink="" />
-            <h1>Hello World</h1>
+            <HomePageMainText />
         </>
     );
 }
