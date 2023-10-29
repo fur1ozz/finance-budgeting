@@ -20,7 +20,7 @@ function App() {
                   <Route path="/NewGoal" element={<NewGoalsPage />} />
                   <Route path="/ReportCard" element={<ReportCardPage />} />
                   <Route path="/Izmaksas" element={<IzmaksasPage />} />
-                  <Route path="/" element={<HeaderComb />} />
+                  {/*<Route path="/" element={<HeaderComb />} />*/}
                   <Route path="/Login" element={<Login />} />
                   <Route path="/Register" element={<Register />} />
               </Routes>

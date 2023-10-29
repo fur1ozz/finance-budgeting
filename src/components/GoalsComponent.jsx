@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import {Link, useNavigate} from 'react-router-dom';
 import Sidebar from './Sidebar';
+import {routerAuth} from "../toLog";
 
 
 //TODO
@@ -10,9 +11,32 @@ import Sidebar from './Sidebar';
 function GoalsComponent() {
     const [data, setData] = useState([]);
     const [inputValues, setInputValues] = useState({});
-    const user = '1'; //need to make session
+    const [userId, setUserId] = useState('');
+    //
+    // useEffect(() => {
+    //     const passToken = localStorage.getItem('token');
+    //     fetch('http://localhost:8080/lapsins_api/financeAPI/getToken.php', {
+    //         method: 'POST',
+    //         headers: {
+    //             'Content-Type': 'application/json',
+    //         },
+    //         body: JSON.stringify({ token: passToken }),
+    //     })
+    //         .then((response) => response.json())
+    //         .then((data) => {
+    //             console.log(data);
+    //             console.log(data.userId);
+    //             setUserId(data.userId);
+    //         })
+    //         .catch((error) => console.error('Error fetching data:', error));
+    // }, []);
+
+    // console.log("this"+userId);
+
     const [showMessageMap, setShowMessageMap] = useState({});
 
+    let token = localStorage.getItem("token");
+    const navigate = useNavigate();
 
     const getRandomPlaceholder = () => {
         // Generate a random number between 1 and 100 and convert it to a string
@@ -46,16 +70,40 @@ function GoalsComponent() {
         if (sum >= 100) return { backgroundColor: '#74B65F'};
         return { backgroundColor: '#FF2F78'};
     };
-    useEffect(() => {
+
+    function fetchToken(){
+        const passToken = localStorage.getItem('token');
+        fetch('http://localhost:8080/lapsins_api/financeAPI/getToken.php', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ token: passToken }),
+        })
+            .then((response) => response.json())
+            .then((data) => {
+                console.log("first");
+                console.log(data);
+                console.log(data.userId);
+                // localStorage.setItem("userID", userId);
+                setUserId(data.userId);
+            })
+            .catch((error) => console.error('Error fetching data:', error));
+    }
+    console.log("this user "+userId);
+    function fetchGoals(){
         fetch('http://localhost:8080/lapsins_api/financeAPI/goalsOutApi.php')
             .then((response) => response.json())
             .then((data) => {
+                // console.log(data);
                 // Filter the data to show only records with user_id equal to 1 and status not equal to "completed"
+                const thisUserId = localStorage.getItem("userID");
                 const filteredData = data.filter(
-                    (goal) => goal.user_id === user && goal.status !== 'completed'
+                    (goal) => goal.user_id === thisUserId && goal.status !== 'completed'
                 );
                 setData(filteredData);
-                // Initialize input values
+                // console.log("filtretie dati" + userId);
+
                 const initialValues = {};
                 filteredData.forEach((goal) => {
                     initialValues[goal.iekrajumu_id] = '';
@@ -63,6 +111,11 @@ function GoalsComponent() {
                 setInputValues(initialValues);
             })
             .catch((error) => console.error('Error fetching data:', error));
+    }
+    useEffect(() => {
+        routerAuth(navigate, token);
+        fetchToken();
+        fetchGoals();
     }, []);
 
     const handleInputChange = (goalId, value) => {
@@ -105,8 +158,6 @@ function GoalsComponent() {
                 })
                 .catch((error) => console.error('Error adding data:', error));
 
-
-            // Clear the input field after adding data
             handleInputChange(goalId, '');
         }
     };
@@ -147,7 +198,7 @@ function GoalsComponent() {
         }
     };
 
-
+    // console.log(data);
     return (
         <>
             <Sidebar />
