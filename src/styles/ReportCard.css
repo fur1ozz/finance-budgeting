@@ -1,0 +1,237 @@
+.report-card-main {
+    background-color: #EFEFEF;
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.report-card-top {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: right;
+    align-items: last baseline;
+}
+
+.report-card-rightBox {
+    width: 25%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: right;
+    margin-right:130px;
+}
+
+.report-card-centered-image {
+    max-width: 90%;
+    max-height: 30px;
+}
+
+.report-card-p {
+    margin-right: 20px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.report-card-dropdown {
+    width: 40px;
+    margin-left: 20px;
+}
+
+.report-card-option {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+    font-size: 16px;
+    width: 140px;
+    margin-left: -3px;
+    font-weight: 600;
+}
+
+.report-card-calendar {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: auto;
+    margin-right: 5px;
+}
+.report-card-lower {
+    /* background-color: pink; */
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.report-card-info{
+    width:22%;
+    height:150px;
+    display:flex;
+    background-color:#FFFFFF;
+    margin:17px;
+    margin-top:-70px;
+}
+.report-card-info1{
+    width:22%;
+    height:150px;
+    display:flex;
+    background-color:#FFFFFF;
+    margin:17px;
+    margin-top:-70px;
+}
+.report-card-info2{
+    width:22%;
+    height:150px;
+    display:flex;
+    background-color:#FFFFFF;
+    margin:17px;
+    margin-top:-70px;
+}
+.report-card-up{
+    width:20%;
+    height:80%;
+    display:flex;
+    align-items:center;
+    /* justify-content:center; */
+}
+.report-card-upimg{
+    max-width: 90%;
+    max-height: 40px;
+}
+.report-card-text{
+    width:60%;
+    height:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.report-card-value{
+    font-weight: bolder;
+    font-size:25px;
+    text-align: center;
+    font-weight: bold;
+    color:#000000
+}
+.report-card-lowerBox{
+    width:60%;
+    flex-direction: column;
+    background-color:#EFEFEF
+}
+.report-card-bottomText{
+    font-weight: bolder;
+}
+/* Add this new CSS class */
+.report-card-text-under-value {
+    font-size:18px; /* Adjust the font size as needed */
+    color: #000000; /* Adjust the color as needed */
+    margin-top: 8px; /* Add some margin to separate it from the value */
+    text-align: center;
+}
+.report-card-span{
+    font-weight:900;
+}
+.report-card-vertical-flip {
+    transform: scaleY(-1);
+    max-width: 90%;
+    max-height: 40px;
+}
+.report-card-value1{
+    font-weight: bolder;
+    font-size:25px;
+    text-align: center;
+    font-weight: bold;
+    color:#FF0000;
+}
+.report-card-upimg1{
+    max-width: 90%;
+    max-height: 50px;
+    margin-right:5px;
+}
+.report-card-up1{
+    width:30%;
+    height:80%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.report-card-sector{
+    width:100%;
+    height:70vh;
+    background-color:#EFEFEF;
+}
+.report-card-right-sector{
+    width:100%;
+    height:70vh;
+    background-color: #EFEFEF ;
+    display:flex;
+    align-items: center;
+}
+.legend {
+    list-style: none;
+    padding: 0;
+}
+
+.legend li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.legend-color {
+    width: 40px;
+    height: 18px;
+    margin-right: 10px;
+    display: inline-block;
+}
+.legend-container{
+    width:20%;
+    height:auto;
+    flex-direction: row;
+    margin:30px;
+}
+@media (max-width: 600px) {
+    .report-card-main {
+        height: auto; /* Allow the content to determine the height */
+    }
+    .report-card-top {
+        height: auto;
+        display:flex;
+        justify-content: center;
+    }
+    .report-card-rightBox {
+        width: 100%;
+        display:flex;
+        justify-content: center;
+    }
+    .report-card-lower {
+        padding: 10px;
+        display:flex;
+        flex-wrap:wrap;
+        height:auto;
+    }
+    .report-card-info {
+        margin: 20px;
+        width:26%;
+    }
+    .report-card-value {
+        font-size: 20px;
+    }
+    .report-card-upimg {
+        max-height: 40px;
+    }
+    .report-card-info1{
+        margin-top:20px;
+        height:120px;
+        width:40%;
+    }
+    .report-card-info2{
+        margin-top:40px;
+        width:26%;
+    }
+
+}
