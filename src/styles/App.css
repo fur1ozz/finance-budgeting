@@ -227,6 +227,21 @@ body{
     justify-content: flex-end;
     height: 60px;
 }
+.flex{
+    display: flex;
+}
+.f-d-column{
+    flex-direction: column;
+}
+.m-b-10px{
+    margin-bottom: 10px;
+}
+.j-c-center{
+    justify-content: center;
+}
+.a-i-center{
+    align-items: center;
+}
 /*sidebar end*/
 @media only screen and (max-width: 1100px) {
     .sidebar-none{

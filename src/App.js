@@ -1,6 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './styles/App.css';
-import HeaderComb from "./pages/HeaderComb";
 import GoalsPage from "./pages/GoalsPage";
 import NewGoalsPage from "./pages/NewGoalsPage";
 import ReportCardPage from "./pages/ReportCardPage";
