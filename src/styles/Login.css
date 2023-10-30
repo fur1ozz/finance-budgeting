@@ -45,9 +45,11 @@
 .login-title{
     height:17%;
     width:100%;
-    flex-direction: row;
     text-align: center;
     font-size:16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .login-title1{
     height:14%;
@@ -290,6 +292,17 @@
     font-weight:600;
     font-size:13.5px;
 }
+.error-message{
+    font-size: 14px;
+    color: red;
+    font-weight: bold;
+}
+.succ-message{
+    font-size: 14px;
+    color: yellowgreen;
+    font-weight: bold;
+}
+
 @media only screen and (max-width: 600px) {
     .login-main {
         flex-direction: column;

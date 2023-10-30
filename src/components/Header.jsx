@@ -3,7 +3,17 @@ import '../styles/Header.css';
 import {Link} from "react-router-dom"; // Import the CSS file
 
 function Header({ prop, link }) {
-    const activeLink = prop; // Set the active link name based on the 'prop' value
+    const activeLink = prop;
+    const userName = localStorage.getItem('userName');
+
+    const handleLogout = () => {
+        const confirmed = window.confirm("Are you sure you want to log out?");
+
+        if (confirmed) {
+            localStorage.clear();
+            window.location.href = '/login';
+        }
+    };
 
     return (
         <header className="header-container">
@@ -33,7 +43,15 @@ function Header({ prop, link }) {
                 </ul>
             </nav>
             <div className="for-login-button no-login">
-                <Link to="/Login" className="login-btn">login</Link>
+                {/*<Link to="/Login" className="login-btn">login</Link>*/}
+                {userName ? ( // Check if userName is set in local storage
+                    <div className="flex f-d-column a-i-center">
+                        <span className="m-b-10px header-user">Hello, {userName}</span>
+                        <button className="logout-btn" onClick={handleLogout}>Logout</button>
+                    </div>
+                ) : (
+                    <Link to="/Login" className="login-btn">Login</Link> // Display the login button
+                )}
             </div>
         </header>
     );

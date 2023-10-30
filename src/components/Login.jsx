@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import '../styles/Login.css';
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 
 function Login() {
 
@@ -8,6 +8,13 @@ function Login() {
         loginUsername: '',
         loginPassword: '',
     });
+    const [errorMessage, setErrorMessage] = useState('');
+    const [errorUsername, setErrorUsername] = useState('');
+    const [errorPassword, setErrorPassword] = useState('');
+    const [successMsg, setSuccessMsg] = useState('');
+
+    const navigate = useNavigate();
+
     const handleChange = (e) => {
         const { name, value } = e.target;
         setLoginData({
@@ -33,8 +40,25 @@ function Login() {
             .then((response) => response.json())
             .then((data) => {
                 console.log('Response from server:', data);
-                localStorage.setItem('token', data.token);
-                localStorage.setItem('userID', data.userID);
+                if (data.token){
+                    setSuccessMsg(data.success);
+                    setErrorUsername(data.errors.usernameVal);
+                    setErrorPassword(data.errors.passwordVal);
+                    setErrorMessage('');
+                    localStorage.setItem('token', data.token);
+                    localStorage.setItem('userID', data.userID);
+                    localStorage.setItem('userName', data.userName);
+                    setLoginData({
+                        loginUsername: '',
+                        loginPassword: '',
+                    });
+                    navigate('/');
+                }else{
+                    setErrorMessage(data.error);
+                    setErrorUsername(data.errors.usernameVal);
+                    setErrorPassword(data.errors.passwordVal);
+                    setSuccessMsg('');
+                }
             })
             .catch((error) => console.error('Error adding data:', error));
 
@@ -48,6 +72,10 @@ function Login() {
                     <div className="login-logo"></div>
                     <div className="login-title">
                         <h1 className="register-h1">LOGIN</h1>
+                        {errorMessage && <p className="error-message">{errorMessage}</p>}
+                        {errorUsername && <p className="error-message">{errorUsername}</p>}
+                        {errorPassword && <p className="error-message">{errorPassword}</p>}
+                        {successMsg && <p className="succ-message">{successMsg}</p>}
                     </div>
                     <form className="login-form">
                         <div className="inputFI">
