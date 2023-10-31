@@ -1,0 +1,609 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.login-main {
+    width: 100%;
+    height: 100vh;
+    background-color: #d8d8d8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inputFIREGISTER {
+    width: 100%;
+    height: 15%;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 10px;
+}
+
+.inputFIREGISTER input {
+    height: 32px;
+    border-radius: 6px;
+    background-color: #EDEFF2;
+    width: 70%;
+    padding-left: 40px;
+    border: none;
+}
+
+.inputFIREGISTER input::placeholder {
+    opacity: 0.5;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.inputFIREGISTER .input-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+.inputFIREGISTER .input-icon img {
+    width: 20px;
+    height: auto;
+    margin-left: 40px;
+}
+.login-center {
+    height: 545px;
+    width: 545px;
+    display: flex;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+.login-image {
+    width: 25%;
+    height: 100%;
+    background-image: url('../images/document.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.loginTOP {
+    flex-direction: row;
+    width: 75%;
+    height: 100%;
+
+}
+
+.login-logo{
+    width:100%;
+    height:30%;
+    background-image: url('../images/top.png');
+    background-size: 40% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    text-justify: auto;
+}
+.login-title{
+    height:17%;
+    width:100%;
+    text-align: center;
+    font-size:16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.login-title1{
+    height:15%;
+    width:100%;
+    flex-direction: row;
+    text-align: center;
+    font-size:16px;
+}
+.register-h1 {
+    font-family: 'Inter', sans-serif;
+    color: #FD7B87;
+}
+.inputFI {
+    width: 100%;
+    height: 15%;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 10px;
+}
+
+.inputFI2 {
+    width: 100%;
+    height: 15%;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 30px;
+}
+.inputFI9 {
+    width: 100%;
+    height: 15%;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 18px;
+}
+.inputFI10 {
+    width: 100%;
+    height: 15%;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 10px;
+}
+.inputFI input {
+    height: 32px;
+    border-radius: 6px;
+    background-color: #EDEFF2;
+    width: 70%;
+    padding-left: 40px;
+    border:none;
+}
+.inputFI2 input {
+    height: 32px;
+    border-radius: 6px;
+    background-color: #EDEFF2;
+    width: 70%;
+    padding-left: 40px;
+    border:none;
+}
+.inputFI9 input {
+    height: 32px;
+    border-radius: 6px;
+    background-color: #EDEFF2;
+    width: 70%;
+    padding-left: 40px;
+    border:none;
+}
+.inputFI10 input {
+    height: 32px;
+    border-radius: 6px;
+    background-color: #EDEFF2;
+    width: 70%;
+    padding-left: 40px;
+    border:none;
+}
+
+.input-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+.mail {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+.inputFI3 .input-icon,
+.inputFI5 .input-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px; /* Adjust this value as needed */
+    transform: translateY(-50%);
+}
+
+.input-icon img {
+    width: 20px;
+    height: auto;
+    margin-left:40px;
+}
+.buttonss {
+    width: 100%;
+    height: 12px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+}
+.button3 {
+    width: 100%;
+    height: 12px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.butonss1 {
+    width: 100%;
+    height: 12px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.loginB {
+    width: 100%;
+    height: 12%;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    font-size:16px;
+}
+.loginB1 {
+    width: 100%;
+    height: 12%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    font-size:16px;
+}
+.loginB2 {
+    width: 100%;
+    height: 12%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    font-size:16px;
+}
+.button2 {
+    width: 40%;
+    height: 33.8px;
+    border-radius: 11px;
+    background-color: #FE667A;
+    color: #FFFFFF;
+    opacity: 86%;
+    margin-top:30px;
+    border:none;
+    outline:none;
+    font-size:13px;
+    font-weight: 600;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button6 {
+    width: 40%;
+    height: 33.8px;
+    border-radius: 11px;
+    background-color: #FE667A;
+    color: #FFFFFF;
+    opacity: 86%;
+    margin-top:30px;
+    border:none;
+    outline:none;
+    font-size:13px;
+    font-weight: 600;
+}
+.button1 {
+    width: 40%;
+    height: 33.8px;
+    border-radius: 11px;
+    background-color: #FE667A;
+    color: #FFFFFF;
+    opacity: 86%;
+    margin-top:30px;
+    border:none;
+    font-weight: 600;
+    font-size:13px;
+    outline:none;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button11{
+    width: 40%;
+    height: 33.8px;
+    border-radius: 11px;
+    background-color: #FE667A;
+    color: #FFFFFF;
+    opacity: 86%;
+    margin-top:30px;
+    border:none;
+    font-weight: 600;
+    font-size:13px;
+    outline:none;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inputFIREGISTER {
+    width: 100%;
+    height: 15%;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: -10px;
+}
+
+.inputFI input::placeholder {
+    opacity: 0.5;
+    font-weight:900;
+    font-size:18px;
+}
+.inputFI2 input::placeholder {
+    opacity: 0.5;
+    font-weight:900;
+    font-size:18px;
+}
+.inputFI9 input::placeholder {
+    opacity: 0.5;
+    font-weight:900;
+    font-size:18px;
+}
+.inputFI10 input::placeholder {
+    opacity: 0.5;
+    font-weight:900;
+    font-size:18px;
+}
+.inputFI3 input::placeholder {
+    opacity: 0.5;
+    font-weight:900;
+    font-size:18px;
+}
+.inputFI5 input::placeholder {
+    opacity: 0.5;
+    font-weight:900;
+    font-size:18px;
+}
+
+.wat {
+    width: 40%;
+    height: 33.8px;
+    border-radius: 11px;
+    background-color: #FE667A;
+    opacity: 86%;
+    outline:none;
+    border:none;
+    font-weight:600;
+    font-size:13.5px;
+}
+.error-message{
+    font-size: 14px;
+    color: red;
+    font-weight: bold;
+}
+.succ-message{
+    font-size: 14px;
+    color: yellowgreen;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+    .login-main {
+        flex-direction: column;
+        height: 160%;
+    }
+    .inputFIREGISTER {
+        background-color: transparent;
+    }
+
+    .inputFIREGISTER input {
+        width: 90%;
+        padding: 0 10px;
+        box-sizing: border-box;
+        margin: 0 auto;
+        border-radius: 7px;
+        height: 50px;
+    }
+
+    .inputFIREGISTER input::placeholder {
+        padding-left: 30px;
+        size: 15px;
+        opacity: 0.5;
+        color: #000000;
+    }
+    .login-center {
+        width: 220%;
+        height: auto;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+    }
+    .login-image {
+        display: none;
+    }
+    .login-main {
+        background-color: transparent;
+    }
+    .login-h1 {
+        color: #FFFFFF;
+        margin-bottom: 70px;
+        font-weight: bolder;
+        text-align: center; /* Center text in h1 element */
+    }
+    .login-logo {
+        background-image: url('../images/top.png');
+        background-size: 140px auto; /* Increase the size of the logo */
+        height: 130px;
+        background-position: center;
+        width: 100%;
+    }
+    .inputFI input, .inputFI2 input {
+        width: 90%;
+        padding: 0 10px;
+        box-sizing: border-box;
+        margin: 0 auto;
+        border-radius: 7px;
+        height: 50px;
+    }
+    .inputFI, .inputFI2 {
+        background-color: transparent;
+    }
+    .button1, .button2 {
+        display: inline-block;
+        width: 50%; /* Adjusted width for centered text */
+        height: 30px;
+        margin: 10px auto;
+        background-color: #FE667A;
+        color: #FFFFFF;
+        padding: 20px;
+        text-align: center;
+        margin-top: 30px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        font-family: sans-serif;
+        font-size:20px;
+        font-weight:900;
+    }
+    .buttonss, .loginB {
+        background-color: transparent;
+        /* margin-top: 30px; */
+        text-align: center; /* Center text in buttons */
+    }
+    .input-icon img {
+        margin-left: 6px;
+        width: 30px;
+    }
+    .inputFI input::placeholder, .inputFI2 input::placeholder {
+        padding-left: 30px;
+        size: 15px;
+        opacity: 0.5;
+        color: #000000;
+    }
+    .login-title{
+        height:0px;
+        margin-bottom: 160px;
+    }
+    .button3{
+        background-color:transparent;
+    }
+    .button6{
+        display: inline-block;
+        width: 50%; /* Adjusted width for centered text */
+        height: 30px;
+        margin: 10px auto;
+        background-color: #FE667A;
+        color: #FFFFFF;
+        padding: 20px;
+        text-align: center;
+        margin-top: 30px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        font-family: sans-serif;
+        font-size:23px;
+        font-weight:900;
+    }
+    .inputFI9, .inputFI10 {
+        background-color: transparent;
+    }
+    .inputFI9 input::placeholder, .inputFI10 input::placeholder {
+        padding-left: 30px;
+        size: 15px;
+        opacity: 0.5;
+        color: #000000;
+    }
+    .inputFI9 input, .inputFI10 input {
+        width: 90%;
+        padding: 0 10px;
+        box-sizing: border-box;
+        margin: 0 auto;
+        border-radius: 7px;
+        height: 50px;
+    }
+    .loginB1{
+        margin-bottom: 35px ;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .login-center {
+        width: 100%; /* Adjusted width for small screens */
+        height: auto; /* Adjusted height for small screens */
+        background-image: url('../images/document.png'); /* Set the background image */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height:100vh;
+    }
+
+
+    .inputFI input, .inputFI2 input {
+        width: 90%;
+        padding: 0 10px;
+        box-sizing: border-box;
+        margin: 0 auto;
+        border-radius: 7px;
+        height: 50px;
+        margin-top:30px;
+    }
+
+    .inputFI input, .inputFI2 input {
+        width: 90%;
+        padding: 0 10px;
+        box-sizing: border-box;
+        margin: 0 auto;
+        border-radius: 7px;
+        height: 50px;
+        margin-top:30px;
+    }
+
+    .button1, .button2 {
+        width: 50%;
+        height: 30px;
+        margin: 10px auto;
+        font-size: 13px;
+        margin-top:40px;
+    }
+
+    .button6 {
+        width: 50%;
+        height: 30px;
+        margin: 10px auto;
+        font-size: 13.5px;
+        font-weight:900;
+    }
+
+    .input-icon img {
+        margin-left: 6px;
+        width: 30px;
+        margin-top:30px;
+    }
+
+    .inputFI input::placeholder, .inputFI2 input::placeholder {
+        padding-left: 30px;
+        font-size: 15px;
+    }
+
+    .login-title {
+        height: 50px;
+        margin-bottom: 30px;
+    }
+    .loginB2{
+    width: 100%;
+    height: 5%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    font-size:16px;
+    }
+    .button11 {
+        width: 50%;
+        height: 38px;
+        margin: 10px auto;
+        font-size: 13px;
+        margin-top:35px;
+    }
+    .register-h1 {
+        font-family: 'Inter', sans-serif;
+        color: #FFFFFF;
+    }
+    .login-title1{
+        height:5%;
+    }
+    
+}
+
+
