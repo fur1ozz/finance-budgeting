@@ -1,0 +1,71 @@
+/* Style for the main container */
+.insert-page-main {
+    background-color: #EFEFEF;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  /* Style for the form */
+  .insert-form {
+    width: 100%;
+    max-width: 300px; /* Reduced maximum width */
+  }
+  
+  /* Style for form groups */
+  .insert-form-group {
+    margin-bottom: 10px; /* Reduced margin */
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  
+  /* Style for labels */
+  .insert-label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  /* Style for select input */
+  .insert-select {
+    width: 320px; /* Make the select input the same width as the text inputs */
+    padding: 8px; /* Reduced padding */
+    font-size: 14px; /* Reduced font size */
+  }
+  
+  /* Style for text inputs */
+  .insert-input {
+    width: 100%;
+    padding: 8px; /* Reduced padding */
+    font-size: 14px; /* Reduced font size */
+  }
+  
+  /* Style for submit button */
+  .insert-button {
+    width: 320px;
+    padding: 8px; /* Reduced padding */
+    background-color: #FFFFFF;
+    border: 1px solid #000;
+    font-weight: bold;
+    font-size: 14px; /* Reduced font size */
+    cursor: pointer;
+    display:flex;
+    justify-content: center;
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 600px) {
+    .insert-form {
+      max-width: 250px; /* Further reduced maximum width */
+    }
+  
+    .insert-select, .insert-input, .insert-button {
+      font-size: 12px; /* Further reduced font size */
+    }
+  }
+  
