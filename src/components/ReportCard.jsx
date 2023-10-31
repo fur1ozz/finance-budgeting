@@ -15,10 +15,12 @@ function ReportCard() {
     let token = localStorage.getItem("token");
     const navigate = useNavigate();
 
+    const userId = localStorage.getItem("userID");
+
     useEffect(() => {
         routerAuth(navigate, token);
-
-        fetch('http://localhost:8080/lapsins_api/financeAPI/reportCardOutApi.php')
+        // Fetch report card data for a specific user and month
+        fetch(`http://localhost:8080/lapsins_api/financeAPI/reportCardOutApi.php?userId=${userId}`)
             .then((response) => response.json())
             .then((reportData) => {
                 setData(reportData);
@@ -28,7 +30,7 @@ function ReportCard() {
                 }
             })
             .catch((error) => console.error('Error fetching data:', error));
-    }, []);
+    }, [userId]);
 
     if (data.length === 0) {
         return <p>Loading...</p>;
@@ -46,8 +48,11 @@ function ReportCard() {
     };
 
 
-    const filteredData = data.find((item) => item.month === selectedMonth);
+    const filteredData = Array.isArray(data) ? data.find((item) => item.month === selectedMonth) : null;
 
+    if (!filteredData) {
+        return <p>Loading...</p>;
+    }
     const calculateDataForChart = () => {
         if (filteredData) {
             const totalSpending = parseFloat(filteredData.spent_on_food) +
@@ -99,12 +104,14 @@ function ReportCard() {
                             value={selectedMonth}
                             onChange={(e) => setSelectedMonth(e.target.value)}
                         >
-                            {data.map((item, index) => (
-                                <option key={index} value={item.month}>
-                                    {item.month}
-                                </option>
-                            ))}
+                            {Array.isArray(data) &&
+                                data.map((item, index) => (
+                                    <option key={index} value={item.month}>
+                                        {item.month}
+                                    </option>
+                                ))}
                         </select>
+
                         <img src="/images/clock.png" alt="Report card image" className="report-card-calendar" />
                     </div>
                 </div>
