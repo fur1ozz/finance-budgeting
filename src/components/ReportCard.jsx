@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import '../styles/ReportCard.css';
 import { ResponsiveContainer, PieChart, Pie, Cell } from 'recharts';
-import {useNavigate} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 import {routerAuth} from "../toLog";
 
 
@@ -95,6 +95,9 @@ function ReportCard() {
 
         <div className='report-card-main'>
             <div className="report-card-top">
+                <div className="flex">
+                    <Link to="/InsertReportCard" className="insert-data-btn">Insert data</Link>
+                </div>
                 <div className='report-card-rightBox'>
                     <p className='report-card-p'>Date</p>
                     <img src="/images/right-arrow.png" alt="report card image" className="report-card-centered-image" />
