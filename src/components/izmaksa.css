@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Josefin+Sans:wght@200;400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Include padding and border in element width */
+    color: 8E8E8E;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    background-color: #8e8e8e ;
+}
+h1{
+    color: #333;
+    font-family: 'Inter', sans-serif;
+    font-weight: Bold;
+    font-size: 20px;
+    opacity: 1;
+    text-align: center;
+}
+.kreisa{
+    height:100% ;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.ievades{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.izmaksreg{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.kurizmaksa{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.datums{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.summa{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.poga{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        
+}
+button{
+    width: 20%;
+    height: 40%;
+    background-color: #4E81B1;
+    color: black; /* Set text color to white for better visibility */
+    border: none; /* Remove button border */
+    cursor: pointer; /* Add pointer cursor for interactivity */
+    border-radius: 50px;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: Bold;
+    opacity: 1;
+    
+}
+button:hover{
+    background-color: d;
+}
+input{
+    background-color: #4E81B1;
+    border: none; /* Remove button border */
+    cursor: pointer; /* Add pointer cursor for interactivity */
+    border-radius: 10px;
+    width: 50%;
+    height: 55%;
+    display: flex;;
+    text-align: center;
+    
+
+}
+::placeholder {
+    color: black;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: Bold;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.ievades2 {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.ienakumi{
+    width: 100%;
+    height: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ienakumusumma{
+    width: 100%;
+    height: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.poga1{
+    width: 100%;
+    height: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.tuks{
+    width: 100%;
+    height: 25%; 
+}
+
+
+.laba{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.top{
+    height:30%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.hello{
+    height:50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.hop{
+    height:50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.bop{    
+    height:50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;}
+.sveiciens{
+    height:50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.users{
+    height:50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1%;
+}
+.attlikums{   
+    height:70%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;}
+.pedeja{
+    height:50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.iz{    
+    height:30%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hz{  
+    height:70%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+}
+.bum{
+    height:100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.sum{
+    height:100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.sum2{
+    height:100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.parko{
+    height:50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.date{
+    height:50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+.bot{
+    height:70%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.teksts{    
+    height:20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.boxi {
+    width: 100%;
+    max-height: 300px; /* Adjust the max height as needed */
+    overflow: auto;
+}
+
+.boks {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 10px; /* Add padding for spacing */
+    
+}
+
+.knakt {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px; /* Add padding for spacing */
+   
+}
+
+/* Optionally, you can add styling for the content within .knakt */
+.knakt h1 {
+    margin: 0; /* Remove default margins on h1 elements */
+}
+
+.sumaunder{
+    height: 35%;
+}
+/* Webkit-based browsers (Chrome, Safari) */
+.boxi::-webkit-scrollbar {
+    width: 12px;
+}
+
+.boxi::-webkit-scrollbar-thumb {
+    background: #D8275A; /* Color of the thumb */
+    border-radius: 6px;
+}
+
+.boxi::-webkit-scrollbar-thumb:hover {
+    background: #D8275A; /* Color of the thumb on hover */
+}
+
+.boxi::-webkit-scrollbar-track {
+    background: #4E81B1; /* Color of the track */
+}
+
+/* Firefox */
+.boxi {
+    scrollbar-width: thin;
+    scrollbar-color:  #D8275A #4E81B1; /* Thumb and track color */
+}
+
+@media only screen and (max-width: 600px) {
+    .main {
+        flex-direction: column;
+    }
+    .kreisa,.laba{
+        width: 100%;
+        height: 50%;
+        
+    }
+    .kreisa{
+        height: 50%;
+    }
+    .laba{
+        padding-top: 30px;
+    }
+    button{
+        height: 50%;
+        width: 50%;
+        font-size: 20px; 
+    }
+    input{
+        height: 70%;
+        width: 70%;
+        font-size: 20px; 
+        border-radius: 20px;
+    }
+    .sumaunder{
+        height: 50%;
+        width: 70%;
+        font-size: 20px; 
+    }
+    .bot{
+        padding-top: 50px;
+    }
+    .sum{
+        padding-top: 50px;
+    }
+    .iz{
+        padding-top: 20px;
+    }
+    .hz{
+        padding-top: 40px;
+    }
+    .date{
+        padding-top: 30px;
+    }
+    .users{
+        padding-top: 10px;
+    }
+    .bop{
+        padding-bottom: 52px;
+    }
+    .poga{
+        height: 100%;
+    }
+    p{
+        font-size: 10px;
+    }
+    .top{
+       
+    }
+
+    .users{
+        padding-bottom: 30px;
+    }
+    .summa{
+        height: 60%;
+    }
+    .datums{
+        height: 60%;
+    }
+    .kurizmaksa{
+        height: 60%;
+    } 
+    .ienakumusumma{
+        width: 100%;
+        
+    }
+
+}
